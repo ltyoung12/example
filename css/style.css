@@ -1,0 +1,307 @@
+/*초기화*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/*로고*/
+.waltDisney {
+  position: fixed;
+  left: 20px;
+  top: 30px;
+  z-index: 96;
+}
+
+#header {
+  position: fixed;
+  z-index: 99;
+  width: 230px;
+  height: 100%;
+  left: -230px;
+  background-color: #000;
+}
+/*네비 오픈버튼*/
+.open {
+  position: fixed;
+  cursor: pointer;
+  left: 6px;
+  top: 0;
+  z-index: 99;
+  font-size: 40px;
+  color: #fff;
+  opacity: 0.3;
+}
+/*네비*/
+.gnb {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  color: #fff;
+}
+.waltDisney2 {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-55%);
+}
+/*닫기버튼*/
+.close {
+  font-size: 25px;
+  color: rgb(158, 158, 206);
+}
+.close > i {
+  position: absolute;
+  right: 20px;
+  top: -130px;
+  cursor: pointer;
+}
+
+/*네비*/
+.gnb > li {
+  margin-bottom: 40px;
+  cursor: pointer;
+  padding-left: 20px;
+}
+.title {
+  margin-bottom: 10px;
+}
+.sub {
+  display: none;
+}
+.sub > li {
+  height: 40px;
+  margin-bottom: 5px;
+  line-height: 2.5;
+}
+.sub > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*메인화면 설정*/
+.main_contents > div {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: none;
+  transition: background 3s;
+}
+/*공통사항(박스,SNS)*/
+.main_contents_box {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.sns {
+  width: 274px;
+  text-align: center;
+  font-size: 35px;
+}
+.sns > i {
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+/*디즈니*/
+.disney {
+  background: url(../img/disney/disney_bg0.jpg) center / 100% 100%;
+}
+
+/*마블*/
+.marvel {
+  background: url(../img/marvel/marvel_bg0.jpg) no-repeat center / 100% 100%;
+}
+
+.marvel > .main_contents_box > img {
+  background-color: rgba(212, 3, 23, 0.4);
+}
+
+.marvel .sns {
+  margin-left: 60px;
+}
+
+/*스타워즈*/
+.starwars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(../img/starwars/starwars_bg0.jpg) no-repeat bottom center /
+    100% 100%;
+  z-index: 10;
+  display: none;
+}
+
+.starwars .sns {
+  margin-left: 100px;
+}
+
+/*지오그래픽*/
+.geographic {
+  background: url(../img/geographic/geographic_bg0.jpg) no-repeat top center /
+    100% 100%;
+}
+
+.geographic > .main_contents_box > img {
+  padding-top: 30px;
+}
+
+.geographic .sns {
+  margin-left: 50px;
+}
+
+/*studios*/
+.studios {
+  background: url(../img/20th_CENTURY_STUDIOS/studios_bg0.jpg) no-repeat center /
+    100% 100%;
+}
+.studios > .main_contents_box > img {
+  width: 300px;
+  margin-top: -40px;
+}
+
+.main_contents > div:first-child {
+  display: block;
+}
+
+/*우측 슬롯*/
+
+.slotGroup {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  right: -250px;
+  margin-top: -200px;
+  background-color: #ff00;
+  z-index: 100;
+  opacity: 0.1;
+  transition: opacity 2s;
+}
+.slotGroup:hover {
+  opacity: 0.8;
+}
+.slot {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 500px;
+  border: 1px solid #000;
+  transition: all 1s;
+  transform: rotate(0deg);
+}
+
+.box {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 230px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: all 1s;
+  border: 1px solid #111;
+}
+
+.box > img {
+  position: absolute;
+}
+
+.slot_box1 {
+  left: -115px;
+  top: 135px;
+  border: 1px solid black;
+  background: url(../img/disney/disney+_bg.jpg) center/ contain;
+}
+
+.slot_box1 > img {
+  left: 50%;
+  top: 50%;
+  transform: translate(-54%, -50%);
+  width: 200px;
+}
+
+.slot_box2 {
+  left: 60px;
+  bottom: -103px;
+  background-color: rgba(212, 3, 23, 1);
+}
+.slot_box2 > img {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -45%);
+  width: 100%;
+}
+
+.slot_box3 {
+  right: -67px;
+  bottom: -10px;
+  background: url(../img/starwars/starwarslogo_bg.png);
+}
+.slot_box3 > img {
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -45%);
+}
+
+.slot_box4 {
+  background-color: #111;
+  right: -65px;
+  top: -15px;
+}
+.slot_box4 > img {
+  padding-top: 85px;
+  padding-left: 10px;
+  width: 220px;
+}
+
+.slot_box5 {
+  background: url(../img/20th_CENTURY_STUDIOS/20th_logo_bg.jpg) no-repeat center;
+  left: 55px;
+  top: -102px;
+  overflow: hidden;
+}
+
+.slot_box5 > img {
+  width: 100%;
+}
+
+/*상,하 버튼*/
+.tBtn,
+.bBtn {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+.tBtn {
+  top: -100px;
+  left: 50%;
+  margin-left: -195px;
+}
+.bBtn {
+  bottom: -102px;
+  left: 50%;
+  margin-left: -190px;
+}

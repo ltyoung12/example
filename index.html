@@ -1,125 +1,248 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>home</title>
-<!--폰트어썸 CDN-->
-<script src="https://kit.fontawesome.com/632d3e2496.js" crossorigin="anonymous"></script>
-<!--외부정의 css-->
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/header.css" rel="stylesheet">
-<link href="css/home.css" rel="stylesheet">
-<link href="css/footer.css" rel="stylesheet">
-<!--파비콘-->
-<link rel="icon" type="image/ico" sizes="16x16" href="img/favicon.ico">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>디즈니</title>
+    <!--폰트어썸-->
+    <script
+      src="https://kit.fontawesome.com/632d3e2496.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--css 외부정의-->
+    <link rel="stylesheet" href="css/style.css" />
 
-<body>
-  <header>
-    <div class="wrap">
-      <div class="logo">
-        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
-      </div>
-      <ul class="navi">
-        <li class="on"><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+    <!--jqeury라이브러리-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
 
-  <section id="main">
-    <h1>UI/UX &amp; Graphic Designer</h1>
-    <p>I am a Graphic &amp; Web Designer based in New York, specializing<br>
-    in User Interface Design and Development.</p>
-  </section>
-  <section id="contents">
-    <div class="wrap">
-      <div class="box">
-        <img src="img/image01.jpg" alt="이미지">
-        <div class="eye"></div>
-      </div>
-      <div class="box">
-        <img src="img/image02.jpg" alt="이미지">
-        <div class="eye"></div>
-      </div>
-      <div class="box">
-        <img src="img/image03.jpg" alt="이미지">
-        <div class="eye"></div>
-      </div>
-      <div class="box">
-        <img src="img/image04.jpg" alt="이미지">
-        <div class="eye"></div>
-      </div>
-      <div class="box">
-        <img src="img/image05.jpg" alt="이미지">
-        <div class="eye"></div>
-      </div>
-      <div class="box">
-        <img src="img/image06.jpg" alt="이미지">
-        <div class="eye"></div>
-      </div>
-      <div class="box">
-        <img src="img/image07.jpg" alt="이미지">
-        <div class="eye"></div>
-      </div>
-      <div class="box">
-        <img src="img/image08.jpg" alt="이미지">
-        <div class="eye"></div>
-      </div>
-      <div class="box">
-        <img src="img/image09.jpg" alt="이미지">
-        <div class="eye"></div>
-      </div>
-      <div class="box">
-        <img src="img/image10.jpg" alt="이미지">
-        <div class="eye"></div>
-      </div>
-      <div class="box">
-        <img src="img/image11.jpg" alt="이미지">
-        <div class="eye"></div>
-      </div>
-      <div class="box">
-        <img src="img/image12.jpg" alt="이미지">
-        <div class="eye"></div>
-      </div>
-    </div>
-  </section>
+    <!--jqeury 외부정의-->
+    <script src="js/custom.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!--로고-->
+      <h1 class="waltDisney">
+        <a href="#">
+          <img src="img/waltdisney.png" alt="" />
+        </a>
+      </h1>
+      <!--헤더(네비) 오픈버튼-->
+      <span class="open">
+        <i class="fas fa-arrow-alt-circle-right"></i>
+      </span>
+      <!--헤더(네비)-->
+      <header id="header">
+        <!--헤더 로고-->
+        <h1 class="waltDisney2">
+          <a href="#">
+            <img src="img/waltdisney.png" alt="" />
+          </a>
+        </h1>
+        <!--헤더 로고-->
+        <ul class="gnb">
+          <li class="close">
+            <i class="fas fa-times-circle"></i>
+          </li>
+          <li>
+            <div class="title">DISNEY</div>
+            <ul class="sub">
+              <li>
+                <a href="#"> 인스타그램 </a>
+              </li>
+              <li>
+                <a href="#"> 페이스북 </a>
+              </li>
+              <li>
+                <a href="#"> 유튜브 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="title">MARVEL</div>
+            <ul class="sub">
+              <li>
+                <a href="#"> 인스타그램 </a>
+              </li>
+              <li>
+                <a href="#"> 페이스북 </a>
+              </li>
+              <li>
+                <a href="#"> 유튜브 </a>
+              </li>
+              <li>
+                <a href="#"> 블로그 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="title">STAR WARS</div>
+            <ul class="sub">
+              <li>
+                <a href="#"> 인스타그램 </a>
+              </li>
+              <li>
+                <a href="#"> 페이스북 </a>
+              </li>
+              <li>
+                <a href="#"> 유튜브 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="title">NATIONAL GEOGRAPHIC</div>
+            <ul class="sub">
+              <li>
+                <a href="#"> 브랜드사이트 </a>
+              </li>
+              <li>
+                <a href="#"> 인스타그램 </a>
+              </li>
+              <li>
+                <a href="#"> 페이스북 </a>
+              </li>
+              <li>
+                <a href="#"> 유튜브 </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="title">20th CENTURY STUDIOS</div>
+            <ul class="sub">
+              <li>
+                <a href="#"> 인스타그램 </a>
+              </li>
+              <li>
+                <a href="#"> 페이스북 </a>
+              </li>
+              <li>
+                <a href="#"> 유튜브 </a>
+              </li>
+              <li>
+                <a href="#"> 트위터 </a>
+              </li>
+              <li>
+                <a href="#"> 블로그 </a>
+              </li>
+              <li></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+      <!--메인 화면-->
+      <div class="main_contents">
+        <div class="disney">
+          <div class="main_contents_box">
+            <img src="img/disney/disney.png" alt="" />
+            <div class="sns">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i> </a>
+            </div>
+          </div>
+        </div>
 
-  <footer>
-    <div class="wrap">
-      <ul class="author">
-        <li>Piroll Design, Inc.</li>
-        <li>
-          &copy; 2022 Piroll. All rights reserved.<br>
-          Designed by robirurk.
-        </li>
-      </ul>
-      <ul class="address">
-        <li>hello@pirolltheme.com</li>
-        <li>+44 987 065 908</li>
-      </ul>
-      <div class="menu">
-        <ul>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Carreer</a></li>
+        <div class="marvel">
+          <div class="main_contents_box">
+            <img
+              src="img/marvel/Marvel_logo2.png"
+              alt=""
+              width="400px"
+              height="200px"
+            />
+            <div class="sns">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"
+                ><i class="fab fa-youtube"></i>
+                <a href="#"><i class="fas fa-blog"></i></a>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="starwars">
+          <div class="main_contents_box">
+            <img
+              src="img/starwars/starwars.png"
+              alt=""
+              width="400px"
+              height="200px"
+            />
+            <div class="sns">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i> </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="geographic">
+          <div class="main_contents_box">
+            <img src="img/geographic/geographic_logo.png" alt="" />
+            <div class="sns">
+              <a href="#">
+                <img
+                  src="img/geographic/m_logo.jpg"
+                  alt=""
+                  width="30px"
+                  height="30px"
+                />
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="studios">
+          <div class="main_contents_box">
+            <img src="img/20th_CENTURY_STUDIOS/20th_logo.png" alt="" />
+            <div class="sns">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--우측 슬롯칸-->
+      <div class="slotGroup">
+        <ul class="slot">
+          <li class="slot_box1 box">
+            <img src="img/disney/disney.png" alt="" />
+          </li>
+          <li class="slot_box2 box">
+            <img src="img/marvel/Marvel_logo2.png" alt="" />
+          </li>
+          <li class="slot_box3 box">
+            <img src="img/starwars/starwars.png" alt="" />
+          </li>
+          <li class="slot_box4 box">
+            <img src="img/geographic/geographic_logo.png" alt="" />
+          </li>
+          <li class="slot_box5 box">
+            <img src="img/20th_CENTURY_STUDIOS/20th_logo.png" alt="" />
+          </li>
         </ul>
-        <ul>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Legals</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Dribbble</a></li>
-          <li><a href="#">Instargram</a></li>
-        </ul>
+        <!--상,하단 클릭 버튼-->
+        <div class="tBtn"></div>
+        <div class="bBtn"></div>
       </div>
     </div>
-  </footer>
-</body>
+  </body>
 </html>
