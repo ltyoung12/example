@@ -1,4 +1,11 @@
 $(function () {
+  //새로고침
+
+  window.onload = function () {
+    setTimeout(function () {
+      scrollTo(0, 0);
+    }, 10);
+  };
   // 스크롤이벤트
   $(window).scroll(function () {
     var scrolltop = $(document).scrollTop();
