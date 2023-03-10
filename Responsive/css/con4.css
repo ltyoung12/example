@@ -1,0 +1,168 @@
+.content4 {
+  width: 100%;
+}
+.con4_wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.con4_box {
+  width: 33.3333%;
+  position: relative;
+  cursor: pointer;
+}
+
+.con4_box > img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.con4_box:hover .con4_box_hover {
+  opacity: 1;
+}
+.con4_box_hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(244, 98, 58, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.con4_box_hover > p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+}
+.con4_box_hover > p > span {
+  display: block;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1199.98px) {
+}
+@media screen and (max-width: 991.98px) {
+}
+
+@media screen and (max-width: 767.98px) {
+  .con4_box {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .con4_box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 249.98px) {
+}
+
+/* 컨텐츠 4 사진 클릭 시 이벤트 */
+
+.con4_picture_slide_wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(000, 000, 000, 0.7);
+  z-index: 9003;
+  display: none;
+}
+.con4_picture_slide_wrapper i:hover {
+  color: #666;
+}
+.con4_picture_slide_box {
+  position: relative;
+  margin: auto;
+  height: 100%;
+}
+
+.click {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  z-index: 9002;
+  border: none;
+  width: 100px;
+  height: 100px;
+}
+.prev {
+  left: 1%;
+}
+.next {
+  right: 1%;
+}
+
+/* 사진박스 구역*/
+.picture_box {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 767.98px;
+  height: auto;
+  top: 50%;
+  transform: translateY(-45%);
+}
+
+.picture_box_list {
+  position: relative;
+  text-align: center;
+}
+/* 리스트 */
+
+.pup:first-child {
+  display: block;
+}
+.pup {
+  display: none;
+}
+.pup > img {
+  max-width: 100%;
+}
+.pup > div {
+  position: absolute;
+  max-width: 100%;
+  left: 0;
+  right: 0;
+  bottom: -25px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.close {
+  position: absolute;
+  width: 100%;
+  max-width: 650px;
+  height: 40px;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.close > i {
+  float: right;
+  cursor: pointer;
+}

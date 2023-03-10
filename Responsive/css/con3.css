@@ -1,0 +1,89 @@
+.content3 {
+  width: 100%;
+  margin: auto;
+  padding: 8rem 0;
+  background-color: #fff;
+  text-align: center;
+  color: #333;
+  margin: auto;
+}
+
+.content3 hr {
+  width: 3.25rem;
+  height: 0.3rem;
+  margin: 25px auto;
+  background-color: #f4623a;
+  border: none;
+}
+.content3 p {
+  color: rgba(51, 51, 51, 0.6);
+  font-weight: bold;
+}
+
+.content3 i {
+  font-size: 2.3rem;
+  color: #f4623a;
+}
+.con3_textBox {
+  margin: auto;
+  max-width: 1200px;
+}
+.con3_bottom_text {
+  display: flex;
+}
+.con3_box {
+  width: 25%;
+  margin-top: 3rem;
+}
+.con3_box h2 {
+  margin: 1rem 0 0.7rem;
+}
+.con3_box p {
+  display: inline-block;
+  max-width: 270px;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1199.98px) {
+  .con3_textBox {
+    max-width: 984px;
+  }
+  .con3_box p {
+    max-width: 220px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .con3_textBox {
+    max-width: 760px;
+  }
+  .con3_box p {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .con3_textBox {
+    max-width: 570px;
+  }
+  .con3_bottom_text {
+    flex-wrap: wrap;
+  }
+  .con3_box {
+    width: 50%;
+  }
+  .con3_box p {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .con3_textBox {
+    max-width: 440px;
+  }
+  .con3_box {
+    width: 100%;
+  }
+  .con3_box p {
+    max-width: 100%;
+  }
+}
