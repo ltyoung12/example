@@ -20,27 +20,35 @@ $(function () {
     // about
 
     if (scrolltop >= 842 && scrolltop < 1396) {
+      $(".about").removeClass("on");
       $(".about").addClass("orange");
     } else {
       $(".about").removeClass("orange");
+      $(".about").addClass("on");
     }
     // services
     if (scrolltop >= 1396 && scrolltop < 1933) {
+      $(".services").removeClass("on");
       $(".services").addClass("orange");
     } else {
       $(".services").removeClass("orange");
+      $(".services").addClass("on");
     }
     // portfolio
     if (scrolltop >= 1933 && scrolltop < 2513) {
+      $(".portfolio").removeClass("on");
       $(".portfolio").addClass("orange");
     } else {
       $(".portfolio").removeClass("orange");
+      $(".portfolio").addClass("on");
     }
     // contact
     if (scrolltop >= 2513) {
+      $(".contact").removeClass("on");
       $(".contact").addClass("orange");
     } else {
       $(".contact").removeClass("orange");
+      $(".contact").addClass("on");
     }
   });
 
