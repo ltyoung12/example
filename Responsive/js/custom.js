@@ -73,8 +73,6 @@ $(function () {
       $("html").animate({ scrollTop: 2513 }, 0.1);
     });
 
-    var headtop = $(".header").offset();
-    console.log(headtop);
     if (headtop >= 0) {
       $(".header").css("background-color", "brown");
     } else if (headtop <= 0 && brown) {
