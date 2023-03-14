@@ -1,11 +1,14 @@
-$(function () {
-  //새로고침
+//새로고침
+function reload() {
+  if (event.keyCode == 116) {
+    scrollTo(0, 0);
+    location.reload;
+  }
+}
 
-  window.onload = function () {
-    setTimeout(function () {
-      scrollTo(0, 0);
-    }, 10);
-  };
+document.onkeydown = reload;
+
+$(function () {
   // 스크롤이벤트
   $(window).scroll(function () {
     var scrolltop = $(document).scrollTop();
@@ -73,11 +76,11 @@ $(function () {
       $("html").animate({ scrollTop: 2513 }, 0.1);
     });
 
-    if (headtop >= 0) {
+    /*if (headtop >= 0) {
       $(".header").css("background-color", "brown");
     } else if (headtop <= 0 && brown) {
       $(".header").css("background-color", "transparent");
-    }
+    }*/
   });
 
   $(window).resize(function () {
