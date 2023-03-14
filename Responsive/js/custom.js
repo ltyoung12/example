@@ -1,4 +1,3 @@
-//새로고침
 function reload() {
   if (event.keyCode == 116) {
     scrollTo(0, 0);
@@ -9,6 +8,8 @@ function reload() {
 document.onkeydown = reload;
 
 $(function () {
+  //새로고침
+
   // 스크롤이벤트
   $(window).scroll(function () {
     var scrolltop = $(document).scrollTop();
@@ -17,16 +18,15 @@ $(function () {
     var trans = $(".header").css("background-color", "transparent");
 
     // 헤더
-    if (scrolltop > 0 && trans) {
-      $(".header").css("background-color", "brown");
-      $(".header_navi > li").addClass("on");
-      $(".header_logo > h1 > a").addClass("on");
-    } else if (scrolltop <= 0 && brown) {
+    if (scrolltop <= 0) {
       $(".header").css("background-color", "transparent");
       $(".header_navi > li").removeClass("on");
       $(".header_logo > h1 > a").removeClass("on");
+    } else if (scrolltop > 0) {
+      $(".header").css("background-color", "brown");
+      $(".header_navi > li").addClass("on");
+      $(".header_logo > h1 > a").addClass("on");
     }
-
     // about
 
     if (scrolltop >= 842 && scrolltop < 1396) {
@@ -34,7 +34,6 @@ $(function () {
       $(".about").addClass("orange");
     } else {
       $(".about").removeClass("orange");
-      $(".about").addClass("on");
     }
     // services
     if (scrolltop >= 1396 && scrolltop < 1933) {
@@ -42,7 +41,6 @@ $(function () {
       $(".services").addClass("orange");
     } else {
       $(".services").removeClass("orange");
-      $(".services").addClass("on");
     }
     // portfolio
     if (scrolltop >= 1933 && scrolltop < 2513) {
@@ -50,7 +48,6 @@ $(function () {
       $(".portfolio").addClass("orange");
     } else {
       $(".portfolio").removeClass("orange");
-      $(".portfolio").addClass("on");
     }
     // contact
     if (scrolltop >= 2513) {
@@ -58,7 +55,6 @@ $(function () {
       $(".contact").addClass("orange");
     } else {
       $(".contact").removeClass("orange");
-      $(".contact").addClass("on");
     }
   });
 
