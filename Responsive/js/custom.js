@@ -14,15 +14,15 @@ $(function () {
   $(window).scroll(function () {
     var scrolltop = $(document).scrollTop();
     console.log(scrolltop);
-    var brown = $(".header").css("background-color", "brown");
-    var trans = $(".header").css("background-color", "transparent");
 
+    var trans = window.innerWidth;
+    console.log(trans);
     // 헤더
     if (scrolltop <= 0) {
       $(".header").css("background-color", "transparent");
       $(".header_navi > li").removeClass("on");
       $(".header_logo > h1 > a").removeClass("on");
-    } else if (scrolltop > 0) {
+    } else if (scrolltop > 0 && trans > 767) {
       $(".header").css("background-color", "brown");
       $(".header_navi > li").addClass("on");
       $(".header_logo > h1 > a").addClass("on");
@@ -81,7 +81,8 @@ $(function () {
 
   $(window).resize(function () {
     var width = window.innerWidth;
-    if (width < 767.98) {
+    if (width <= 767.98) {
+      $(".header_navi > li").removeClass("on");
       $(".header_navi").css("display", "none");
     }
     if (width > 767.98) {
