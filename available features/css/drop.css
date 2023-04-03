@@ -1,0 +1,244 @@
+/* 드롭 */
+#drop {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  min-width: 1600px;
+}
+#drop > div {
+  width: 500px;
+  background-color: bisque;
+  height: 500px;
+  text-align: center;
+}
+#drop h1 {
+  margin: 15px 0 10px;
+}
+.trans > div {
+  height: 230px;
+}
+
+.drop_nav_all_sub {
+  display: none;
+}
+.drop_nav_solo_sub {
+  display: none;
+}
+/* 세로 */
+/* 모두 내림 */
+.trans .drop_nav_all {
+  width: 440px;
+  height: 40px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+}
+
+.trans .drop_nav_all > li > a {
+  width: 110px;
+  display: block;
+  line-height: 40px;
+}
+.trans .drop_nav_all > li > a:hover {
+  color: coral;
+  font-weight: bold;
+  background-color: purple;
+}
+
+.trans .drop_nav_all_sub {
+  background-color: darkgray;
+}
+
+.trans .drop_nav_all_sub > li > a {
+  display: block;
+  line-height: 30px;
+}
+.trans .drop_nav_all_sub > li > a:hover {
+  background-color: cadetblue;
+  color: #333;
+  font-weight: bold;
+}
+/* 모두 내림  끝 */
+
+/* 하나씩 내림 */
+
+.trans .drop_nav_solo {
+  width: 440px;
+  height: 40px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  background-color: #777;
+  color: #fff;
+}
+.trans .drop_nav_solo > li > a {
+  width: 110px;
+  display: block;
+  line-height: 40px;
+}
+.trans .drop_nav_solo > li > a:hover {
+  color: coral;
+  font-weight: bold;
+  background-color: purple;
+}
+
+.trans .drop_nav_solo_sub {
+  background-color: #777;
+}
+.trans .drop_nav_solo_sub > li > a {
+  display: block;
+  line-height: 40px;
+}
+.trans .drop_nav_solo_sub > li > a:hover {
+  background-color: cadetblue;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 가로 */
+
+.length > div {
+  height: 230px;
+  position: relative;
+}
+
+.length .drop_nav_all {
+  position: absolute;
+  right: -73px;
+  top: 70px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  transform: rotate(90deg);
+  color: #fff;
+  background-color: #666;
+}
+
+.length .drop_nav_all a {
+  display: block;
+  transform: rotate(-90deg);
+}
+
+.length .drop_nav_all > li > a {
+  width: 50px;
+  line-height: 50px;
+}
+
+.length .drop_nav_all > li > a:hover {
+  color: coral;
+  font-weight: bold;
+  background-color: purple;
+}
+
+.length .drop_nav_all > li > .drop_nav_all_sub {
+  background-color: #999;
+  height: 400px;
+}
+.length .drop_nav_all > li > .drop_nav_all_sub > li {
+  height: 100px;
+  text-align: center;
+}
+
+.length .drop_nav_all > li > .drop_nav_all_sub > li > a {
+  display: block;
+  width: 50px;
+  height: 100px;
+  line-height: 100px;
+}
+.length .drop_nav_all .drop_nav_all_sub > li:hover {
+  background-color: cadetblue;
+  color: #333;
+  font-weight: bold;
+}
+
+.length .drop_nav_solo {
+  position: absolute;
+  left: -73px;
+  bottom: 105px;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  transform: rotate(-90deg);
+}
+.length .drop_nav_solo a {
+  display: block;
+  transform: rotate(90deg);
+}
+.length .drop_nav_solo > li {
+  height: 50px;
+}
+.length .drop_nav_solo > li > a {
+  width: 50px;
+  line-height: 50px;
+  height: 50px;
+  color: #fff;
+}
+.length .drop_nav_solo > li > a:hover {
+  color: coral;
+  font-weight: bold;
+  background-color: purple;
+}
+.length .drop_nav_solo > li > .drop_nav_solo_sub {
+  height: 400px;
+  background-color: #888;
+}
+.length .drop_nav_solo > li > .drop_nav_solo_sub > li:hover {
+  font-weight: bold;
+  background-color: cadetblue;
+  color: #333;
+}
+.length .drop_nav_solo > li > .drop_nav_solo_sub > li > a {
+  display: block;
+  line-height: 100px;
+}
+
+/* 아코디언 드롭다운 */
+
+.accordion_slide_wrap {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex: left;
+  flex-wrap: wrap;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  text-indent: 10px;
+}
+
+.accordion_slide_wrap > li {
+  width: 100%;
+  text-align: center;
+}
+.accordion_slide_wrap > li > a {
+  display: block;
+  line-height: 50px;
+}
+.accordion_slide_wrap > li > a:hover {
+  background-color: purple;
+  color: coral;
+}
+
+.accordion_slide_sub {
+  background-color: #666;
+  display: none;
+}
+.accordion_slide_sub > li {
+  height: 50px;
+}
+.accordion_slide_sub > li > a {
+  display: block;
+  line-height: 50px;
+}
+
+.accordion_slide_sub > li > a:hover {
+  background-color: cadetblue;
+  color: #333;
+  font-weight: bold;
+}

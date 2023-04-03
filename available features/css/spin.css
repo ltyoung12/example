@@ -1,0 +1,76 @@
+#spin > div {
+  position: relative;
+}
+
+.spin_box {
+  width: 0px;
+  height: 0px;
+  border-top: 50px solid red;
+  border-bottom: 50px solid blue;
+  border-right: 50px solid green;
+  border-left: 50px solid yellow;
+  animation: move 10s infinite;
+  position: absolute;
+  left: 0px;
+}
+@keyframes move {
+  0% {
+    transform: translate3d(0px, 0px, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate3d(400px, 0px, 0) rotate(90deg);
+  }
+  50% {
+    transform: translate3d(400px, 400px, 0) rotate(180deg);
+  }
+  75% {
+    transform: translate3d(0px, 400px, 0) rotate(270deg);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0) rotate(360deg);
+  }
+}
+
+.circle_wrap {
+  width: 400px;
+  height: 400px;
+  margin: 50px auto 0;
+
+  border-radius: 50%;
+  position: relative;
+  animation: spin 5s linear infinite;
+}
+
+.circle {
+  width: 0px;
+  height: 0px;
+  border-top: 25px solid #333;
+  border-right: 25px solid #888;
+  border-bottom: 25px solid #333;
+  border-left: 25px solid #888;
+  border-radius: 50%;
+  background-color: #333;
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  transform: translateX(-50%);
+  animation: circle 10s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

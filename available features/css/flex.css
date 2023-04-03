@@ -1,0 +1,33 @@
+#flex > .flex_wrap {
+  width: 1200px;
+}
+.flex_list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.flex_list > li {
+  width: 20%;
+  height: 100%;
+  flex: 1;
+  transition: all 1s;
+}
+.flex_list > li:hover {
+  flex: 2.4;
+}
+
+.flex_list > li:nth-child(1) {
+  background: url(../img/p1.jpg) no-repeat center/ cover;
+}
+.flex_list > li:nth-child(2) {
+  background: url(../img/p2.jpg) no-repeat center/ cover;
+}
+.flex_list > li:nth-child(3) {
+  background: url(../img/p3.jpg) no-repeat center/ cover;
+}
+.flex_list > li:nth-child(4) {
+  background: url(../img/p4.jpg) no-repeat center/ cover;
+}
+.flex_list > li:nth-child(5) {
+  background: url(../img/p5.jpg) no-repeat center/ cover;
+}

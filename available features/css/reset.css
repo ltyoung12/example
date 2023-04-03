@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-width: 1900px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 슬라이드 */
+.box {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+.box > div {
+  width: 500px;
+  background-color: bisque;
+  height: 500px;
+  text-align: center;
+}

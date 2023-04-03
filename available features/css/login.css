@@ -1,0 +1,36 @@
+#login > div {
+  width: 1200px;
+}
+
+.login_wrap {
+  width: 500px;
+  height: 300px;
+  margin: 50px auto 0;
+  background-color: rgba(000, 000, 000, 0.2);
+  border: 1px solid red;
+}
+
+.login_wrap > form > input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.login_wrap > form > input[type="submit"] {
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  border: none;
+  background-color: coral;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login_wrap > form > label {
+  display: block;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,42 @@
+#country > .clock_wrap {
+  width: 1200px;
+  position: relative;
+}
+
+.from {
+  width: 700px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.from_name {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  font-size: 40px;
+}
+.clock_wrap > h1 {
+  margin-top: 40px;
+}
+
+.clock {
+  width: 600px;
+  display: flex;
+  margin: 150px auto 0;
+}
+.clock > li {
+  width: 65px;
+  font-size: 30px;
+}
+.clock > li:nth-child(4) {
+  margin-right: 50px;
+}
+
+.month_wrap > ul {
+  width: 300px;
+  display: flex;
+}
+.month_wrap > ul > li {
+  margin: 0 20px 0 0;
+}
